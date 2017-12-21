@@ -3,6 +3,7 @@ import math
 import numpy as np
 from sklearn import preprocessing, cross_validation, svm
 from sklearn.linear_model import LinearRegression
+from tabulate import tabulate
 
 df = pd.read_csv('amazon.txt')
 
@@ -36,8 +37,26 @@ clf.fit(X_train, y_train)
 
 forecast_label = clf.predict(X[-forecast_out:])
 
+forecast_label_ = ['%.2f' % elem for elem in forecast_label]
+
 actual_price = df['close'][-forecast_out:]
 print(actual_price)
-print(forecast_label)
-# for items in forecast_label:
-#     print(item, df[''])
+print(forecast_label_)
+predicted_price = forecast_label.tolist()
+print(predicted_price)
+validate = zip(actual_price, forecast_label)
+fluc = []
+for i in range(0,10):
+    print()
+
+for item in validate: 
+    change = round((item[1]-item[0])/item[1]*100.0, 2)
+    re_ = round(item[1], 2)
+    fluc.append(("%.2f" % item[0], "%.2f" % re_, str("%.2f" % change) + str('%')))
+
+for item in fluc:
+    print(item)
+
+
+for i in range(0,10):
+    print()
