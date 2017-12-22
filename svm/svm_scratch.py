@@ -11,7 +11,7 @@ class SVM:
         self.colors = {1: 'r', -1: 'g'}
         if self.vis:
             self.fig = plt.figure()
-            self.ax = self.fig.add_subplot(1,1,1)
+            self.ax = self.fig.add_subplot(1, 1, 1)
 
     def fit(self, data):
         """

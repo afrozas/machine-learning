@@ -14,3 +14,4 @@
 ## Algorithms implemented
 1. [Linear Regression](https://github.com/enigmaeth/machine-learning/tree/master/linear-regression)
 1. [Support Vector Machine](https://github.com/enigmaeth/machine-learning/tree/master/svm)
+1. [K-Nearest Neighbors](https://github.com/enigmaeth/machine-learning/tree/master/knn)
