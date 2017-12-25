@@ -1,0 +1,31 @@
+    <<<<<<<<<<<<<                   Naive Bayes                     >>>>>>>>>>>>>>>> 
+3041689 2889917
+Passed : 56.536%
+ === Positive === 
+	 Precision 	|	 Recall 	|	 F-Value
+	 82.828283% 	|	 90.109890% 	|	 86.315789%
+ === Negative === 
+	 Precision 	|	 Recall 	|	 F-Value
+	 91.176471% 	|	 84.545455% 	|	 87.735849%
+
+
+   <<<<<<<<<<<<<            Naive Bayes with stopwords removal       >>>>>>>>>>>>>>>> 
+Passed : 66.512%
+ === Positive === 
+	 Precision 	|	 Recall 	|	 F-Value
+	 87.878788% 	|	 90.625000% 	|	 89.230769%
+ === Negative === 
+	 Precision 	|	 Recall 	|	 F-Value
+	 91.089109% 	|	 88.461538% 	|	 89.756098%
+
+
+ <<<<<<<<<<<<<  Naive Bayes with Binary Naive Bayes plus stopwords removal   >>>>>>>>>>>>>>>> 
+Passed : 69.036%
+ === Positive === 
+	 Precision 	|	 Recall 	|	 F-Value
+	 88.888889% 	|	 90.721649% 	|	 89.795918%
+ === Negative === 
+	 Precision 	|	 Recall 	|	 F-Value
+	 91.000000% 	|	 89.215686% 	|	 90.099010%
+
+
