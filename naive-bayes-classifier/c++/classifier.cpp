@@ -145,7 +145,7 @@ void loadVocabList()
 {
 	// function to load vocab list 
 	ifstream infile; 
-	infile.open("../data/dataset/imdb.vocab"); 
+	infile.open("../dataset/imdb.vocab"); 
 	string occurence;
 	int line = 0;
 	//cout << "Reading from dataset/imdb.vocab" << endl;  
@@ -206,7 +206,7 @@ void totalCountofWords()
 {
 	// calculate count of words
 	ifstream infile; 
-	infile.open("../data/dataset/train/labeledBow.feat"); 
+	infile.open("../dataset/train/labeledBow.feat"); 
 	string occurence;
 	string delimiter = ":";
 	int line = 0;
@@ -228,7 +228,7 @@ void totalCountofWordsBNB()
 {
 	// calculate count of words for binary naive bayes
 	ifstream infile; 
-	infile.open("../data/dataset/train/labeledBow.feat"); 
+	infile.open("../dataset/train/labeledBow.feat"); 
 	string occurence;
 	string delimiter = ":";
 	int line = 0;
@@ -270,7 +270,7 @@ void generatePredictions()
 	totalCountofWords();
 	calculateProbability();
 	ifstream infile; 
-	infile.open("../data/dataset/test/labeledBow.feat"); 
+	infile.open("../dataset/test/labeledBow.feat"); 
 	string occurence;
 	string delimiter = ":";
 	int line = -1;
@@ -320,7 +320,7 @@ void generatePredictionsBinaryNaiveBayes()
 {
 	// function to generate predictions using Binary Naive Bayes 
 	ifstream infile; 
-	infile.open("../data/dataset/test/labeledBow.feat"); 
+	infile.open("../dataset/test/labeledBow.feat"); 
 	string occurence;
 	string delimiter = ":";
 	int line = -1;
@@ -379,7 +379,7 @@ void generatePredictionsRemoveStopwords()
 {
 	// function to generate predictions using Naive Bayes after removing stopwords
 	ifstream infile; 
-	infile.open("../data/dataset/test/labeledBow.feat"); 
+	infile.open("../dataset/test/labeledBow.feat"); 
 	string occurence;
 	string delimiter = ":";
 	int line = -1;
