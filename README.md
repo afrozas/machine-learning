@@ -1,3 +1,5 @@
+[![Coverage Status](https://coveralls.io/repos/github/enigmaeth/machine-learning/badge.svg?branch=master)](https://coveralls.io/github/enigmaeth/machine-learning?branch=master)
+
 # machine learning
 
 > Implementaion of some Machine Learning algorithms using different libraries and also from scratch.  
